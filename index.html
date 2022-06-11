@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" 
 href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
     <style>
@@ -16,6 +18,7 @@ href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
     <title>Rabah ABELLACHE | Computer science student & web developer</title>
 </head>
 <body>
+    <div class="container">
     <center>
         <h1>Rabah Abellache</h1>
         <h4>Hello internet, my name is <strong>RABAH</strong> i'm a Computer science student and a web developer.</h4>
@@ -30,65 +33,51 @@ href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
     <hr>
     <h3>My favorite Progects:</h3>
     <ul >
-        <li><a href="#">Library Managment System</a></li>
-        <li><a href="#">YouTube Clone</a></li>
+        <li><a href="./blog/pro/librarymanagmentsystem.html">Library Managment System</a></li>
+        <li><a href="#" onclick="linknotavlibl()">YouTube Clone</a></li>
     </ul>
     <h4>see more on my <a href="./blog/blog.html"><strong>Blog</strong></a></h4>
     <hr>
+    <!-- progress-->
+    <div class="container">
+        <div class="skill-box">
+            <span class="title">C | Java | Python</span>
+
+            <div class="skill-bar">
+                <span class="skill-per html">
+                    <span class="tooltip">90%</span>
+                </span>
+            </div>
+        </div>
+      
+
+        <div class="skill-box">
+            <span class="title">HTML | CSS</span>
+
+            <div class="skill-bar">
+                <span class="skill-per css">
+                    <span class="tooltip">70%</span>
+                </span>
+            </div>
+        </div>
+        <div class="skill-box">
+            <span class="title">JavaScript</span>
+
+            <div class="skill-bar">
+                <span class="skill-per javascript">
+                    <span class="tooltip">50%</span>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+    <!--progress end-->
     
-
-    <table >
-        <thead>
-            <tr>
-                <th colspan="2">MY SKILLS:</th>
-        <tr>
-            <td>
-                <table cellspacing="10">
-                    <tr>
-                        <td>C</td>
-                        <td><span>&#11088;&#11088;&#11088;&#11088;&#11088;</span></td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td><span>&#11088;&#11088;&#11088;&#11088;&#11088;</span></td>
-                    </tr>
-                    <tr>
-                        <td>Desktop apps</td>
-                        <td><span>&#11088;&#11088;&#11088;&#11088;</span></td>
-                    </tr>
-                    <tr>
-                        <td>Java</td>
-                        <td><span>&#11088;&#11088;&#11088;&#11088;&#11088;</span></td>
-                    </tr>
-                </table>
-            </td>
-            <td>
-                <table cellspacing="10">
-                    <tr>
-                        <td>JavaScript</td>
-                        <td><span>&#11088;&#11088;&#11088;</span></td>
-                    </tr>
-                    <tr>
-                        <td>Disign</td>
-                        <td><span>&#11088;&#11088;&#11088;&#11088;</span></td>
-                    </tr>
-                    <tr>
-                        <td>Css</td>
-                        <td><span>&#11088;&#11088;</span></td>
-                    </tr>
-                    <tr>
-                        <td>Java</td>
-                        <td><span>&#11088;&#11088;&#11088;&#11088;&#11088;</span></td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-
-    </table>
-   
     <hr>
     <center>
         <h4><a href="contact-me.html">Contact me</a></h4>
     </center>
+</div>
+<script src="./js/index.js"></script>
 </body>
 </html>
