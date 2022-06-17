@@ -188,7 +188,8 @@ li a:hover {
 .contact-img {
     margin: 20px;
     border-radius: 100%;
-    width: 60px;
+
+    
 }
 .contact-img:hover {
     background-color: rgb(243, 243, 243);
@@ -282,6 +283,9 @@ footer p {
         margin: 50px 0;
         
     }
+    .project{
+        margin: 20px 40px;
+    }
     .project img {
         width: 100%;
     }
@@ -307,6 +311,10 @@ footer p {
         font-size: 1.9rem;
         
     }
+    .contact-img {
+        width: 70px;
+    }
+    
     .hero-p {
         max-width: 60%;
         margin: auto auto;
@@ -369,6 +377,15 @@ footer p {
   @media screen and (max-width: 360px) {
     .box img {
         width: 50px;
+    }
+    .project-text{
+        margin-left: 30px;
+    }
+    .project{
+        margin: 30px 5px;
+    }
+    .project-text{
+        padding: 0;
     }
     .title {
         font-size: 1.3rem;
