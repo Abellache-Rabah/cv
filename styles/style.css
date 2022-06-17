@@ -188,6 +188,7 @@ li a:hover {
 .contact-img {
     margin: 20px;
     border-radius: 100%;
+    width: 60px;
 }
 .contact-img:hover {
     background-color: rgb(243, 243, 243);
