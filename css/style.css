@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+body {
+	background-image: url(../imgs/checkerboard-cross.png);
+	font-family: 'Poppins', sans-serif;
+	
+}
+.container {
+	max-width: 80%;
+	margin: 0 auto;
+}
+ul {
+	list-style: none;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+/*navigation*/
+#navigation {
+	width: 100%;
+	height: 80px;
+	padding: 10px;
+}
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	display: flex;
+
+
+}
+.logo h1 a{
+	color: #094067;
+	line-height: 2;
+}
+.logo ul {
+	display: flex;
+	align-items: center;
+}
+.logo ul a {
+	color: #90b4ce;
+	margin-left: 20px;
+}
+.contact-btn {
+	color: #fffffe;
+	background: #3da9fc;
+	padding: 1px;
+	border-radius: 50%;
+
+	cursor: pointer;
+	box-shadow: 0 1px 8px #1f1235;
+	position: fixed;
+	right: 80px;
+	z-index: 100;
+	border: 1px solid #094067;
+
+}
+
+/*hero*/
+#hero {
+	margin: 90px 0;
+	display: flex;
+	justify-content: space-around;
+}
+#hero img {
+	width: 500px;
+
+  	  
+}
+.img {
+	position: relative;
+	animation: upanddown 5s infinite;
+}
+.hero-text p {
+	font-size: 10px;
+	color: #5f6c7b;
+}
+.hero-text h1 {
+	color: #3da9fc;
+	font-family: 'Dancing Script', cursive;
+	font-size: 4rem;
+}
+.hero-text h4 {
+	color: #5f6c7b;
+	font-size: 15px;
+	font-weight: 100;
+}
+.btn-cv {
+	width: 200px;
+	padding: 10px;
+	background: #ef4565;
+	color: #fffffe;
+	border: none;
+	border-radius: 20px;
+	margin: 30px 60px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+/*projects*/
+#projects {
+	background: #fffffe;
+	display: flex;
+	flex-flow: column;
+}
+#projects h1 {
+	color: #094067;
+	letter-spacing: 10px;
+	font-weight: 300;
+	margin: 10px auto;
+}
+.project {
+	padding: 30px;
+	margin: 50px auto;
+	display: flex;
+	max-width: 80%;
+	justify-content: space-around;
+	overflow: hidden;
+
+}
+.project-text {
+	margin: 0 100px;
+}
+.project img {
+	width: 450px;
+	box-shadow: 0 2px 8px #333;
+	border-radius: 10px;
+}
+
+.project-theme {
+	font-size: 10px;
+	color: #ef4565;
+}
+.project-title {
+	font-weight: 500;
+	font-size: 2rem;
+
+}
+.project-description {
+	color: #5f6c7b;
+	max-width: 400px;
+	font-size: 13px;
+}
+
+
+/**/
+ /* Container needed to position the overlay. Adjust the width as needed */
+.container-ocerlay {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+
+}
+
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: 300;
+  object-fit: cover;
+}
+
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+	background-color: #333;
+  border-radius: 10px;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container-ocerlay:hover .overlay {
+  opacity: 0.7;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #eee;
+} 
+/**/
+
+#contact {
+	width: 80%;
+	margin: 50px auto;
+	text-align: center;
+}
+#contact h1 {
+	color: #094067;
+	letter-spacing: 10px;
+	font-weight: 300;
+}
+.soicial {
+	margin: 30px;
+}
+.soicial i {
+	font-size: 2rem;
+	margin: 20px;
+	transition: 0.2s ease;
+}
+.soicial i:hover {
+	color: #3da9fc;
+	transform: scale(1.2);
+}
+
+
+@media (max-width: 800px) {
+  .container {
+	max-width: 95%;
+}
+#hero img {
+	width: 300px;
+}
+
+.hero-text h1 {
+	font-size: 3rem;
+}
+.hero-text h4 {
+	font-size: 10px;
+
+}
+.btn-cv {
+	width: 150px;
+}
+
+.project img {
+	width: 350px;
+}
+
+.project-title {
+	font-weight: 500;
+	font-size: 1.6rem;
+
+}
+.project-description {
+	
+	max-width: 900px;
+	
+}
+.project-text {
+	margin:  0 15px;
+}
+
+}
+
+
+@media (max-width: 526px) {
+#hero {
+	display: block;
+	text-align: center;
+}
+#hero img {
+	width: 300px;
+	margin: 20px;
+}
+.btn-cv {
+	position: absolute;
+	top: 300px;
+	right: 40px;
+}
+#projects {
+	display: block;	
+	text-align: center;
+}
+.project {
+	display: block;
+	overflow: hidden;
+
+}
+
+.project img {
+	width: 100%;
+	
+}
+.container-ocerlay {
+	margin: 0 auto;
+  max-width: 350px;
+
+}
+.project-text {
+	margin-bottom: 30px;
+}
+  .container {
+	max-width: 100%;
+}
+.contact-btn {
+	
+	right: 15px;
+
+}
+#hero {
+	margin: 30px 0;
+}
+.logo {
+		display: block;
+	}
+}
+
+
+@media (max-width: 360px) {
+	.logo {
+		display: block;
+	}
+	.btn-cv {
+	right: 0;
+}
+.project img {
+	width: 100%;
+	
+}
+.soicial i {
+	font-size: 20px;
+	margin: 10px;
+}
+}
+
+
+@keyframes upanddown {
+  0% {top: 0px;}
+  50% {top: -25px} /* ignored */
+  100% {top: 0px;}
+}
